@@ -9,13 +9,15 @@ import {
   faHtml5,
   faJs,
   faReact,
+  faNpm,
+  faGit,
 } from "@fortawesome/free-brands-svg-icons";
 const Skills = () => {
   return (
     <Container className="skill">
       <h1 className="paragraph text-center pt-5">Tools&Technolgies I use</h1>
       <div className="row">
-        <div className="rounded shadow-lg col my-5 mx-2">
+        <div className="rounded shadow-lg col col-sm-3 col-lg-2 mt-3 mx-2">
           <h3 className="paragraph text-center col ">
             <FontAwesomeIcon
               className="mx-2"
@@ -26,7 +28,7 @@ const Skills = () => {
             HTML
           </h3>
         </div>
-        <div className="rounded shadow-lg col my-5 mx-2">
+        <div className="rounded shadow-lg col col-sm-3 col-lg-2 mt-3 mx-2">
           <h3 className="paragraph text-center col">
             <FontAwesomeIcon
               className="mx-2"
@@ -37,7 +39,7 @@ const Skills = () => {
             CSS
           </h3>
         </div>
-        <div className="rounded shadow-lg col my-5 mx-2">
+        <div className="rounded shadow-lg col col-sm-3 col-lg-2 mt-3 mx-2">
           <h3 className="paragraph text-center ">
             <FontAwesomeIcon
               className="mx-2"
@@ -48,7 +50,7 @@ const Skills = () => {
             javascript
           </h3>
         </div>
-        <div className="rounded shadow-lg col my-5 mx-2">
+        <div className="rounded shadow-lg col col-sm-3 col-lg-2 mt-3 mx-2">
           <h3 className="paragraph text-center  ">
             <FontAwesomeIcon
               className="mx-2"
@@ -59,7 +61,7 @@ const Skills = () => {
             React
           </h3>
         </div>
-        <div className="rounded shadow-lg col my-5 mx-2">
+        <div className="rounded shadow-lg col col-sm-3 col-lg-2 mt-3 mx-2">
           <h3 className="paragraph text-center ">
             <FontAwesomeIcon
               className="mx-2"
@@ -70,9 +72,35 @@ const Skills = () => {
             Bootstrap
           </h3>
         </div>
-        <div className="rounded shadow-lg col my-5 mx-2">
-          <Image fluid src={TailwindIco} className="mx-auto d-block" />
+        <div className="rounded shadow-lg col col-sm-3 col-lg-2 mt-3 mx-2">
+          <Image
+            style={{ width: 70, height: 70 }}
+            src={TailwindIco}
+            className="mx-auto d-block mt-3"
+          />
           <h3 className="paragraph text-center ">Tailwind</h3>
+        </div>
+        <div className="rounded shadow-lg col col-sm-3 col-lg-2 mt-3 mx-2">
+          <h3 className="paragraph text-center ">
+            <FontAwesomeIcon
+              className="mx-2"
+              size="3x"
+              icon={faNpm}
+              color="orange"
+            ></FontAwesomeIcon>
+            NPM
+          </h3>
+        </div>
+        <div className="rounded shadow-lg col col-sm-3 col-lg-2 mt-3 mx-2">
+          <h3 className="paragraph text-center col-12 ">
+            <FontAwesomeIcon
+              className="mx-2 col-12"
+              size="3x"
+              icon={faGit}
+              color="black"
+            ></FontAwesomeIcon>
+            Git
+          </h3>
         </div>
       </div>
     </Container>
